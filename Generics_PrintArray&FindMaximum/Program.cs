@@ -12,6 +12,7 @@ namespace Generics_PrintArrayFindMaximum
             double[] doublearray = { 2.23, 12.45, 23.43, 65.23 };
             char[] chararray = { 'a', 'g', 'u', 'p' };
             int a = 10, b = 20, c = 30;
+            float x = 2.3f, y = 1.3f, z = 4.2f;
 
             Console.WriteLine("Please choose a Program from below option:");
             Console.WriteLine("1:Print Array \n2:Print Array usung Generic Method \n3:Generic Class Concept" +
@@ -40,6 +41,7 @@ namespace Generics_PrintArrayFindMaximum
                     break;
                 case 4:
                     FindMaximum.FindMaxValue(a, b, c);
+                    FindMaximum.FindMaxValue(x,y,z);
                     break;
             Console.ReadLine();
            
