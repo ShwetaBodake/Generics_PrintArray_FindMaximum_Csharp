@@ -13,6 +13,7 @@ namespace Generics_PrintArrayFindMaximum
             char[] chararray = { 'a', 'g', 'u', 'p' };
             int a = 10, b = 20, c = 30;
             float x = 2.3f, y = 1.3f, z = 4.2f;
+            string str1 = "abc", str2 = "pqr", str3 = "xyz";
 
             Console.WriteLine("Please choose a Program from below option:");
             Console.WriteLine("1:Print Array \n2:Print Array usung Generic Method \n3:Generic Class Concept" +
@@ -40,8 +41,20 @@ namespace Generics_PrintArrayFindMaximum
                     charObject.ToPrint();
                     break;
                 case 4:
+                    Console.WriteLine("\n Integer Comparison");
                     FindMaximum.FindMaxValue(a, b, c);
+                    Console.WriteLine("\nFloat Comparison");
                     FindMaximum.FindMaxValue(x,y,z);
+                    Console.WriteLine("String Comparison");
+                    var res1=FindMaximum.FindMaxValue(str1, str2, str3);
+                    if(res1 != null)
+                    {
+                        Console.WriteLine("{0} is greater than among all {1} {2} {3}", res1, str1, str2, str3);
+                    }
+                    else
+                    {
+                        Console.WriteLine("2 or 3 numbers have same value");
+                    }
                     break;
             Console.ReadLine();
            
