@@ -10,7 +10,7 @@ namespace Generics_PrintArrayFindMaximum
            
             int[] array = { 1, 9, 3, 5 };
             MaximumNumber<int> generic = new MaximumNumber<int>(array);
-           Console.WriteLine( generic.MaxValue());
+          generic.PrintMaxValue();
             Console.ReadLine();
 
 

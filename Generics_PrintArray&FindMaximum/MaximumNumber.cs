@@ -22,7 +22,16 @@ namespace Generics_PrintArray_FindMaximum
                 return sortedValue[1];
 
             }
-      
+        public T MaxMethod()
+        {
+            var max = MaxValue(this.value);
+            return max;
+        }
+        public void PrintMaxValue()
+        {
+            var max = MaxValue(this.value);
+            Console.WriteLine($"Maximum value :{max}");
+        }
 
     }
     
