@@ -17,7 +17,7 @@ namespace Generics_PrintArrayFindMaximum
 
             Console.WriteLine("Please choose a Program from below option:");
             Console.WriteLine("1:Print Array \n2:Print Array usung Generic Method \n3:Generic Class Concept" +
-                "\n4.Find Maximum");
+                "\n4.Find Maximum \n5.Find max using generics");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -55,6 +55,17 @@ namespace Generics_PrintArrayFindMaximum
                     {
                         Console.WriteLine("2 or 3 numbers have same value");
                     }
+                    break;
+                case 5:
+                    FindmaxRefactor<int> obj= new FindmaxRefactor<int>(10,20,30);
+                    int Result = obj.TestMaximum();
+                    Console.WriteLine(Result);
+                    FindmaxRefactor<float> obj2 = new FindmaxRefactor<float>(10.88f, 20.65f, 30.65f);
+                    float Result2 = obj2.TestMaximum();
+                    Console.WriteLine(Result2);
+                    FindmaxRefactor<string> obj3 = new FindmaxRefactor<string>("abc", "dre", "hjh");
+                    string Result3 = obj3.TestMaximum();
+                    Console.WriteLine(Result);
                     break;
             Console.ReadLine();
            
